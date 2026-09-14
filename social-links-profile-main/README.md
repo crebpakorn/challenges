@@ -23,7 +23,7 @@ Add your project screenshot as `screenshot.jpg` in the project root. The image b
 ### Links
 
 - Solution URL: Add your Frontend Mentor solution URL after submitting
-- Live Site URL: Add your deployed site URL after publishing
+- Live Site URL: (https://crebpakorn.github.io/challenges/social-links-profile-main/index.html)
 
 ## My process
 
