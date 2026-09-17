@@ -1,0 +1,133 @@
+:root {
+  --orange-500: hsl(25, 97%, 53%);
+  --white: hsl(0, 100%, 100%);
+  --grey-500: hsl(217, 12%, 63%);
+  --grey-900: hsl(213, 19%, 18%);
+  --grey-950: hsl(216, 12%, 8%);
+  --grey-800: hsl(213, 19%, 24%);
+}
+
+.page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-950);
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey-900);
+  padding: 2rem;
+  border-radius: 1.75rem;
+  max-width: 412px;
+  width: 100%;
+  gap: 1rem;
+  color: var(--grey-500);
+  line-height: 1.5;
+}
+
+.card h1 {
+  color: var(--white);
+}
+
+.card p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.ratingButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--grey-800);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  color: var(--grey-500);
+}
+
+.ratingButton:hover {
+  background-color: var(--orange-500);
+  color: var(--white);
+}
+
+.submitButton {
+  width: 100%;
+  border: 0;
+  border-radius: 2rem;
+  padding: 0.75rem 0;
+  background-color: var(--orange-500);
+  color: var(--grey-950);
+  font: inherit;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: var(--white);
+  color: var(--grey-950);
+}
+
+.starWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: var(--grey-800);
+}
+
+.selected {
+  background-color: var(--white);
+  color: var(--grey-900);
+}
+
+.thankYou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.thankYou .result {
+  color: var(--orange-500);
+  background-color: var(--grey-800);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 0 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
